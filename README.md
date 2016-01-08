@@ -1,2 +1,2 @@
 # simon
-A python memory game.
+A python 3 colorful digits memory game
