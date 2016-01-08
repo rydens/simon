@@ -9,4 +9,3 @@ git pull
 git add -A .
 git commit -a -m "$comment"
 git push
-espeak "everything is saved."
