@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+import colors as c
+from random import randint
+import time as t
+
+def pick():
+    return randint(1,4)
+
+def pick_colored():
+    num = pick()
+    if num == 1:
+        return c.red + '1'
+    elif num == 2:
+        return c.blue + '2'
+    elif num == 3:
+        return c.yellow + '3'
+    elif num == 4:
+        return c.green + '4'
+
+def wait():
+    t.sleep(.5)
+
+if __name__ == '__main__':
+    print(c.clear + c.multi('Welcome to the Simon program!'))
+    print()
+    for count in range(4):
+        print(pick_colored(), end=' ')
+        
+    print()
+    
